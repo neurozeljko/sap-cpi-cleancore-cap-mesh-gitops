@@ -2,7 +2,7 @@
 
 [![SAP Integration Suite](https://img.shields.io/badge/SAP%20Integration%20Suite-Cloud%20Integration-0A85EA?style=for-the-badge&logo=sap&logoColor=white)](https://www.sap.com)
 [![Clean Core Standard](https://img.shields.io/badge/Clean%20Core-Zero%20Z--Tables%20%7C%20Zero%20Custom%20ABAP-success?style=for-the-badge&logo=sap&logoColor=white)](https://www.sap.com)
-[![CAP Framework](https://img.shields.io/badge/Extensibility-NodeJS%20CAP%20v8-blueviolet?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://cap.cloud.sap)
+[![CAP Framework](https://img.shields.io/badge/Extensibility-SAP%20CAP%20NodeJS-blueviolet?style=for-the-badge&logo=sap&logoColor=white)](https://cap.cloud.sap)
 [![OAuth 2.0 Standard](https://img.shields.io/badge/Security-OAuth%202.0%20RFC%208693%20Token%20Exchange-red?style=for-the-badge)](https://datatracker.ietf.org/doc/html/rfc8693)
 [![GitOps Automation](https://img.shields.io/badge/CI%2FCD-Project%20Piper%20%7C%20SonarQube-orange?style=for-the-badge&logo=githubactions&logoColor=white)](https://sap.github.io/jenkins-library/)
 [![Observability](https://img.shields.io/badge/Operations-SAP%20Cloud%20ALM%20%7C%20OpenTelemetry-2e7d32?style=for-the-badge&logo=opentelemetry&logoColor=white)](https://support.sap.com/en/alm/sap-cloud-alm.html)
