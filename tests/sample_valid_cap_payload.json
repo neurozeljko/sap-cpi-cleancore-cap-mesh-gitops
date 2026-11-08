@@ -1,0 +1,27 @@
+{
+  "operationMetadata": {
+    "originatingService": "srv-cap-partner-portal-prod",
+    "businessContext": "CUSTOMER_CREDIT_EVALUATION",
+    "requestedTimestamp": "2026-11-08T20:15:30.104Z"
+  },
+  "businessPartnerData": {
+    "businessPartnerCategory": "2",
+    "organizationName": "Acme Industrial Technologies SE",
+    "searchTerm1": "ACME",
+    "legalForm": "01",
+    "roles": [
+      {
+        "businessPartnerRole": "FLCU01"
+      }
+    ],
+    "addresses": [
+      {
+        "country": "DE",
+        "city": "Munich",
+        "postalCode": "80331",
+        "streetName": "Maximilianstraße",
+        "houseNumber": "42"
+      }
+    ]
+  }
+}

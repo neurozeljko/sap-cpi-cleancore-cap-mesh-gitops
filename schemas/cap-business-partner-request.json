@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CAPBusinessPartnerRequest",
+  "type": "object",
+  "properties": {
+    "operationMetadata": {
+      "type": "object",
+      "properties": {
+        "originatingService": { "type": "string" },
+        "businessContext": { "type": "string" }
+      },
+      "required": ["originatingService"]
+    },
+    "businessPartnerData": {
+      "type": "object",
+      "properties": {
+        "organizationName": { "type": "string" }
+      },
+      "required": ["organizationName"]
+    }
+  },
+  "required": ["operationMetadata", "businessPartnerData"]
+}

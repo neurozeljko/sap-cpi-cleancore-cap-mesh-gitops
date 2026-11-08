@@ -1,0 +1,36 @@
+general:
+  buildTool: "mta"
+  collectPipelineMetrics: true
+
+stages:
+  SourceCodeLinting:
+    sonarExecuteScan:
+      serverUrl: "https://sonarqube.enterprise.corp"
+      projectKey: "sap-cpi-cleancore-cap-mesh"
+      failOnQualityGateBreach: true
+
+  UnitTests:
+    groovyExecuteTests:
+      testTool: "spock"
+      minCodeCoveragePercentage: 90
+
+  ArtifactBuild:
+    mtaBuild:
+      buildTarget: "CF"
+
+  IntegrationDeployment:
+    cpiArtifactDeploy:
+      cpiTenantUrl: "https://integration-suite-eu10.it-cpi026-rt.cfapps.eu10-002.hana.ondemand.com"
+      credentialId: "BTP_DEPLOY_OAUTH"
+      packageId: "CleanCoreModernizationCAPMicroservicesAPIMeshGitOpsCICD"
+      iFlowId: "IF_CleanCore_CAP_APIMesh_to_S4HANA"
+
+  AutomatedTesting:
+    newmanExecute:
+      collection: "tests/clean-core-api-mesh-collection.json"
+      environment: "tests/btp-dev-environment.json"
+
+  ProductionTransport:
+    tmsUpload:
+      nodeName: "PRD_INTEGRATION_SUITE"
+      autoRelease: false
